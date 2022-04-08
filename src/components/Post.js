@@ -7,7 +7,7 @@ const Post = ({ post }) => {
         <div>
             <img src={post.image} height="250" width="250"></img>
             <p>Post by {post.username} • {likes} likes</p>
-            <button onClick={() => { setLikes(likes + 1)}}>&hearts;</button>
+            <button onClick={() => { setLikes(likes + 1)}}><i class="fa-solid fa-heart"></i></button>
             <p>{post.content}</p>
         </div>
     )
